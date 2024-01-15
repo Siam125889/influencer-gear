@@ -1,0 +1,82 @@
+/* shared */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* header */
+header {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  list-style: none;
+}
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+.header-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.header-img {
+  background-image: url(images/Circle\ design.svg);
+  background-position: center;
+  background-size: cover;
+}
+.header-img img {
+  width: 100%;
+}
+
+/* partners */
+.partners {
+  width: 75%;
+  margin: auto;
+  margin-top: 100px;
+}
+.partners-img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.partners-img img {
+  width: 10%;
+}
+@media screen and (max-width: 560px) {
+  /* header */
+  header nav {
+    flex-direction: column;
+  }
+  nav ul {
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  .header-content {
+    flex-direction: column-reverse;
+  }
+  .header-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .partners-img img {
+    width: 20%;
+  }
+}
